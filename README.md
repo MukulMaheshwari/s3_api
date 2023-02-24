@@ -1,5 +1,5 @@
-# s3_api
-S3 api to list bucket content
+# S3 Api
+# S3 api to list bucket content
 
 
 Written in flask, this api list contents in bucket on AWS. 
