@@ -13,12 +13,12 @@ Required dependencies to setup (manual) :
 
 To run manually,steps are :
 
-Clone repo to local
-gunicorn --bind 0.0.0.0:5000 wsgi:app --daemon
+- Clone repo to local
+- gunicorn --bind 0.0.0.0:5000 wsgi:app --daemon
 
 
 Automated setup via Terraform on EC2:
-Clone repo on local & perform init, plan & apply.
+- Clone repo on local & perform init, plan & apply.
 
 Few things to keep in mind :
 - Configure your aws cli credentials beforehand
