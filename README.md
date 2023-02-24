@@ -11,7 +11,8 @@ Required dependencies to setup (manual) :
 - gunicorn
 - Flask
 
-To run manually , steps are :
+To run manually,steps are :
+
 Clone repo to local
 gunicorn --bind 0.0.0.0:5000 wsgi:app --daemon
 
