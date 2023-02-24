@@ -4,8 +4,25 @@ S3 api to list bucket content
 
 Written in flask, this api list contents in bucket on AWS. 
 
-Required dependencies to setup on EC2 instance : 
+Required dependencies to setup (manual) :
+- Python3
+- aws-cli
+- boto3
+- gunicorn
+- Flask
 
+To run manually , steps are :
+Clone repo to local
+gunicorn --bind 0.0.0.0:5000 wsgi:app --daemon
+
+
+Automated setup via Terraform on EC2:
+Clone repo on local & perform init, plan & apply.
+
+Few things to keep in mind :
+- Configure your aws cli credentials beforehand
+- EC2 connects to S3 via assigned role (instance profile). Give necessary role permissions & replace it in the file.
+- Existing keypair can be used, just replace it with your one.
 
 
 It follows the following structure : 
