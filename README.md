@@ -2,7 +2,7 @@
 # S3 api to list bucket content
 
 
-Written in flask, this api list contents in bucket on AWS. 
+Written in flask, this api list contents of S3 bucket on AWS. 
 
 Required dependencies to setup (manual) :
 - Python3
