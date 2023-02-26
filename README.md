@@ -22,8 +22,7 @@ Automated setup via Terraform on EC2:
 
 Few things to keep in mind :
 - Configure your aws cli credentials beforehand
-- EC2 connects to S3 via assigned role (instance profile). Give necessary role permissions & replace it in the file.
-- Existing keypair can be used, just replace it with your one.
+- EC2 connects to S3 via assigned role (instance profile).
 
 
 It follows the following structure : 
