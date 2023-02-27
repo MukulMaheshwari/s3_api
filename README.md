@@ -2,7 +2,7 @@
 ### S3 api to list bucket content
 
 
-Written in flask, this api list contents of S3 bucket on AWS. It runs on port 5000 & uses gunicorn server for serving requests.Only GET requests are supported to retrieve contents in json format.
+Written in flask, this api list contents of S3 bucket on AWS. It runs on port 5000 & uses gunicorn server for serving requests.GET requests are served to retrieve contents in json format, no POST currently.
 
 Required dependencies to setup (manual) :
 - Python3
