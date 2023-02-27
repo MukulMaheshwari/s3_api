@@ -24,6 +24,9 @@ Few things to keep in mind :
 - Configure your aws cli credentials beforehand
 - EC2 connects to S3 via assigned role (instance profile).
 
+Terraform layout :
+-- main.tf
+
 
 It follows the following structure : 
 - http://IP:PORT/list-bucket-content : Lists all buckets in your account
