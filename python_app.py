@@ -34,8 +34,9 @@ def child(value):
             for my_bucket_object in my_bucket.objects.all():
                 # Getting high level directories only
                 Buckets.append(my_bucket_object.key.split("/")[0])
-                print(my_bucket_object.key.split("/")[0])
+                # print(my_bucket_object.key.split("/")[0])
             
+            #converting to set for unique values
             res = [*set(Buckets)]
 
             return jsonify({'content': res})
