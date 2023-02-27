@@ -35,7 +35,7 @@ It follows the following structure :
 
 
 Outputs:
-
+List bucket contents , bucket name : 
 
 ![s3](https://user-images.githubusercontent.com/31155543/221485182-dfb7322d-fb79-40d2-af09-75eb9f7fc68a.jpeg)
 
