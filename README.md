@@ -25,8 +25,9 @@ Few things to keep in mind :
 - EC2 connects to S3 via assigned role (instance profile).
 
 Terraform layout :
--- main.tf
+- main.tf
 
+Rest of the files are cloned to loca from git repo while setup.
 
 It follows the following structure : 
 - http://IP:PORT/list-bucket-content : Lists all buckets in your account
