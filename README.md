@@ -27,7 +27,7 @@ Few things to keep in mind :
 Terraform layout :
 - main.tf
 
-Rest of the files are cloned to loca from git repo while setup.
+Rest of the files are cloned to local from git repo while setup.
 
 It follows the following structure : 
 - http://IP:PORT/list-bucket-content : Lists all buckets in your account
