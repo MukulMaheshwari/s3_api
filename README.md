@@ -36,7 +36,8 @@ It follows the following structure :
 
 Outputs:
 - List high level directory or all buckets present :
-  ![s3-2](https://user-images.githubusercontent.com/31155543/221487110-8100699d-d239-4e92-b7a5-ba2757f72df4.jpeg)
+  
+![s3-2](https://user-images.githubusercontent.com/31155543/221487110-8100699d-d239-4e92-b7a5-ba2757f72df4.jpeg)
   
 - List bucket contents, bucket name : mukultest 
 
