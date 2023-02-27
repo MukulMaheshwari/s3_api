@@ -32,3 +32,10 @@ It follows the following structure :
 - http://IP:PORT/list-bucket-content : Lists all buckets in your account
 - http://IP:PORT/list-bucket-content/<bucket-name> : Lists all directories under it.
 - http://IP:PORT/list-bucket-content/<bucket-name-not-present> : Gives error message 
+
+
+Outputs:
+
+
+![s3](https://user-images.githubusercontent.com/31155543/221485182-dfb7322d-fb79-40d2-af09-75eb9f7fc68a.jpeg)
+
