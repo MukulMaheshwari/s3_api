@@ -7,8 +7,10 @@ from flask import Flask, jsonify, request
 # creating a Flask app
 app = Flask(__name__)
 
+#creating s3 connection
 s3 = boto3.resource('s3')
 
+#list all buckets route
 @app.route('/list-bucket-content', methods = ['GET'])
 def home():
     if(request.method == 'GET'):
@@ -19,7 +21,7 @@ def home():
         
         return jsonify({'content': Buckets})
 
-
+#list bucket route contents with the given name
 @app.route('/list-bucket-content/<value>', methods = ['GET'])
 def child(value):
     if(request.method == 'GET'):
@@ -30,7 +32,7 @@ def child(value):
             my_bucket = s3.Bucket(value)
 
             for my_bucket_object in my_bucket.objects.all():
-                # print(my_bucket_object.key)
+                # Getting high level directories only
                 Buckets.append(my_bucket_object.key.split("/")[0])
                 print(my_bucket_object.key.split("/")[0])
             
@@ -38,7 +40,6 @@ def child(value):
 
             return jsonify({'content': res})
         except ClientError as e:
-            #print("test")
             return jsonify({'Error' : "Bucket not found"})
     else :
         print("error")
